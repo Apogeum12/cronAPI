@@ -1,0 +1,23 @@
+[package]
+name = "cron_api"
+version = "0.0.1"
+edition = "2021"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+strip = true
+
+
+[dependencies]
+actix-web = "4.3.1"
+actix-cors = "0.6.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.97"
+dotenv = "0.15.0"
+env_logger = "0.10.0"
+num_cpus = "1.15"
+log = "0.4.19"
+dirs = "5.0.1"
+sysinfo = "^0.29"

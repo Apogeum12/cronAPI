@@ -1,0 +1,25 @@
+[tasks.build-release]
+command = "cargo"
+args = ["build", "--release"]
+
+[tasks.create-api-dir]
+command = "mkdir"
+args = ["-p", "application"]
+
+[tasks.copy-env]
+command = "cp"
+args = ["-r", ".env", "application/"]
+
+[tasks.copy-binary]
+command = "cp"
+args = ["-r", "target/release/cron_api", "application/"]
+
+[tasks.build]
+command = "echo"
+args = ["--- Finished build App ^ ^ ---"]
+dependencies = [
+    "build-release",
+    "create-api-dir",
+    "copy-env",
+    "copy-binary"
+]
