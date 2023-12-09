@@ -17,7 +17,7 @@
 
 # Cron API Cluster
 
-TODO: This is a Cluster API application for Witan Scrapers services. We use it to run list of scrapers in cluster on independend threads. In the following steps, I will assume that the repository is already cloned and that we are in the project folder `cron_api`.
+TODO: This is a Cluster API application for run services. We use it to run list of programs in cluster on independend threads. In the following steps, I will assume that the repository is already cloned and that we are in the project folder `cron_api`.
 
 ## Installation of Rust
 
