@@ -2,7 +2,7 @@
 
 # Spis treści
 
-- [Description cron_api](#witan-services-clusterapi)
+- [Description cron_api](#cron-api-cluster)
 - [Installation of Rust](#installation-of-rust)
 - - [MacOS](#macos)
 - - [Linux](#linux)
@@ -15,7 +15,7 @@
 - - [Post Run](#post-run)
 - - [POST harmonogram](#post-harmonogram)
 
-# Witan Services clusterApi
+# Cron API Cluster
 
 TODO: This is a Cluster API application for Witan Scrapers services. We use it to run list of scrapers in cluster on independend threads. In the following steps, I will assume that the repository is already cloned and that we are in the project folder `cron_api`.
 
