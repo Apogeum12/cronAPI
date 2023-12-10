@@ -49,9 +49,10 @@ $ sudo ./cron_api
 We start the application by entering the `application/` folder and typing `./cron_api` in the console. We should get a log like this:
 
 ```sh
-[2023-07-03T10:29:27Z INFO  cron_api] Starting server in "0.0.0.0:1726" with 10 threads
-[2023-07-03T10:29:27Z INFO  actix_server::builder] starting 10 workers
-[2023-07-03T10:29:27Z INFO  actix_server::server] Actix runtime found; starting in Actix runtime
+[2023-12-10T22:59:47Z INFO  cron_api] Cron service is already running as root.
+[2023-12-10T22:59:47Z INFO  cron_api] Starting server in "0.0.0.0:1726" with 10 threads
+[2023-12-10T22:59:47Z INFO  actix_server::builder] starting 10 workers
+[2023-12-10T22:59:47Z INFO  actix_server::server] Actix runtime found; starting in Actix runtime
 
 ```
 
