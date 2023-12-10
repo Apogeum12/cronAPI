@@ -11,8 +11,8 @@ use crate::Harmonogram;
 
 /// Endpoint to receive and process new harmonograms.
 ///
-/// This function accepts harmonograms in JSON format, saves them to a cron file for scheduled execution, 
-/// and posts the harmonograms to another API (`DNET_API`). It provides comprehensive error handling and feedback.
+/// This function accepts harmonograms in JSON format, saves them to a cron file for scheduled execution. 
+/// It provides comprehensive error handling and feedback.
 #[post("/harmonogram")]
 pub async fn post_harmonogram(incoming: web::Json<Vec<Harmonogram>>,
 ) -> impl Responder {

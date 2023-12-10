@@ -21,7 +21,7 @@ use harmonogram::post_harmonogram::post_harmonogram;
 
 /// Entry point of the application responsible for initializing the server and services.
 ///
-/// This function initializes environment variables, fetches the harmonogram from the database,
+/// This function initializes environment variables.
 /// starts the cron service, sets up CORS configuration, and begins the Actix HTTP server with the defined routes.
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -89,6 +89,7 @@ fn start_cron_service() {
 use std::process::Command;
 use std::fs::File;
 use std::io::Write;
+
 /// Writes the harmonogram entries as cron jobs to a file and loads them into the cron service.
 ///
 /// This function processes the harmonogram entries, converts them to cron job format, and writes them
