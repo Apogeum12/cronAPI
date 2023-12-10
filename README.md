@@ -9,7 +9,7 @@
 - [Application](#application)
 - [Generate Documentation](#generate-documentation)
 - [Endpoints](#endpoints)
-- - [Post Run](#post-run)
+- - [POST Run](#post-run)
 - - [POST harmonogram](#post-harmonogram)
 
 # Cron API Cluster
