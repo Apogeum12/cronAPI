@@ -1,6 +1,6 @@
 # cron_api
 
-# Spis treści
+# Table of Contents
 
 - [Description cron_api](#cron-api-cluster)
 - [Installation of Rust](#installation-of-rust)
@@ -17,23 +17,7 @@
 
 # Cron API Cluster
 
-TODO: This is a Cluster API application for run services. We use it to run list of programs in cluster on independend threads. In the following steps, I will assume that the repository is already cloned and that we are in the project folder `cron_api`.
-
-## Installation of Rust
-
-### MacOS
-
-1. Open Terminal.
-2. Install _rustup_, a tool for installing Rust, by typing: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`.
-3. Close and reopen the terminal.
-4. Type `rustc --version`. You should see the version of the Rust compiler.
-
-### Linux
-
-1. Open Terminal.
-2. Install _rustup_, a tool for installing Rust, by typing: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`.
-3. Close and reopen the terminal.
-4. Type `rustc --version`. You should see the version of the Rust compiler.
+TODO: This is a Cluster API application for run services. We use it to run list of programs in cluster on independend threads.
 
 ## Dependencies
 
@@ -55,17 +39,17 @@ $ cargo make build
 
 ## Run Application
 
-1. Go into application folder and run binary as:
+1. Go into "application/" folder and run binary as:
 
 ```sh
-$ ./cron_api
+$ sudo ./cron_api
 ```
 
-2. After the compilation is finished, it should create a folder named `cron_api/` with our application and `.env` static file. (I specifically did not build them inside the binary).
+2. After the compilation is finished, it should create a folder named `application/` with our application and `.env` static file. (I specifically did not build them inside the binary). We need run as root, because we'll create, and modify crontab.
 
 ## Application
 
-We start the application by entering the `cron_api/` folder and typing `./cron_api` in the console. We should get a log like this:
+We start the application by entering the `application/` folder and typing `./cron_api` in the console. We should get a log like this:
 
 ```sh
 [2023-07-03T10:29:27Z INFO  cron_api] Starting server in "0.0.0.0:1726" with 10 threads
@@ -97,7 +81,7 @@ $ cargo doc --no-deps
 ```json
 {
     "thread": 2,
-    "services": ["service1", ..., "serviceN"],
+    "services": ["service1", "...", "serviceN"],
 }
 ```
 
@@ -113,15 +97,13 @@ $ cargo doc --no-deps
 
 ```json
 {
-  "id": "ID",
   "time": "* * * *",
   "thread": 2,
-  "scrapers": ["scraper1", "scraper2"]
+  "scrapers": ["service1", "service2"]
 }
 ```
 
 - where:
-  - id: `string`
   - time: `string`
   - thread: `number`
   - scrapers: `string[]`
