@@ -3,9 +3,6 @@
 # Table of Contents
 
 - [Description cron_api](#cron-api-cluster)
-- [Installation of Rust](#installation-of-rust)
-- - [MacOS](#macos)
-- - [Linux](#linux)
 - [Dependencies](#dependencies)
 - [Compilation](#compilation)
 - [Run Application](#run-application)
@@ -17,7 +14,7 @@
 
 # Cron API Cluster
 
-TODO: This is a Cluster API application for run services. We use it to run list of programs in cluster on independend threads.
+This is a Cluster API application for run services. We use it to run list of programs in cluster on independend threads.
 
 ## Dependencies
 
