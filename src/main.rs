@@ -16,7 +16,6 @@ mod harmonogram;
 use harmonogram::post_harmonogram::post_harmonogram;
 
 //TODO: test save harmonogram -> POST harmonograms
-//TODO: Run cluster from /run
 // TODO Test save harmonogram and if its running autmoaticly
 
 /// Entry point of the application responsible for initializing the server and services.
